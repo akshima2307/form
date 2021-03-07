@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Ministry of Culture</title>
+</head>
+<body>
+    <section class="container">
+        <div class="header">
+            <div class="logo_main">
+                <img src="img/MOC Final LOGO (1).png" alt="Logo">
+            </div>
+            <div class="logo_flex">
+                <img src="img/4-NGMA - 1.png" alt="">
+                <img src="img/5-soham.png" alt="">
+            </div>
+        </div>
+        <div class="form">
+            <input type="text" class="form__input" placeholder="FULL NAME"  required>
+            <input type="number" class="form__input" placeholder="MOBILE NUMBER"  required>
+            <input type="email" class="form__input" placeholder="EMAIL ADDRESS"  required>
+            <input type="number" class="form__input" placeholder="NO. OF TICKETS"  required>
+            <div class="drop_down">
+                <select>
+                    <option value="MALE">MALE</option>
+                    <option value="FEMALE">FEMALE</option>
+                    <option value="RATHER NOT TO SAY">RATHER NOT TO SAY</option>
+                </select>
+                <select id="option" onchange="calculateFee()">
+                    <option value="STUDENT">STUDENT</option>
+                    <option value="INDIAN">INDIAN</option>
+                    <option value="FOREIGN NATIONALS">FOREIGN NATIONALS</option>
+                </select>
+            </div>
+            <div>
+                <label for="fee" class="form__label">ENTRY FEE:</label>
+                <input class="form__input fee" id="fee" required>
+            </div>
+            <button class="btn">PROCCED TO PAY</BUtton>
+        </div>
+        <span>Copyright 2021, all rights reserved with National Gallery of Modern Art.</span>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

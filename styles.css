@@ -1,0 +1,139 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    background-image: url("img/WhatsApp\ Image\ 2021-03-01\ at\ 1.32.41\ AM.jpeg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 800px 100vh;
+}
+.container > span{
+    width: 100%;
+    text-align: center;
+    font-size: 0.6rem;
+    color: white;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.header{
+    width: 100%;
+    height: 30%;
+}
+.logo_main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logo_main > img{
+    margin: 0.5rem 0;
+    width: 15rem;
+}
+.logo_flex{
+    display: flex;
+    justify-content: center;
+}
+.logo_flex > img{
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+}
+.logo_flex > img:first-child{
+    margin-right: 0.7rem;
+}
+.form{
+    box-sizing: border-box;
+    padding-top: 2rem;
+    height: 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form__input,
+.form__input:active,
+.form__input:visited{
+    width: 60%;
+    height: 2.5rem;
+    padding-left: 1rem;
+    margin-bottom: 0.7rem;
+    outline: none;
+    border-radius: 0.5rem;
+    border: none;
+}
+.form__input:focus{
+    border: 3px solid rgb(35, 147, 240);
+}
+.form__label{
+    color: white;
+    font-weight: 700;
+    margin-right: 5rem;
+}
+.drop_down{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-bottom: 1.2rem;
+    padding: 0.5rem;
+}
+.drop_down > select{
+    width: 46%;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
+}
+.fee{
+    width: 5rem;
+}
+.btn,.btn:visited{
+    height: 3rem;
+    width: 11rem;
+    background-color: rgb(35, 147, 240);
+    color: white;
+    outline: none;
+    border-radius: 0.6rem;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    transition: hover 0.2s;
+}
+.btn:hover{
+    background-color: white;
+    color: rgb(35, 147, 240);
+}
+
+
+@media(min-width: 700px){
+    .form__input,
+    .form__input:active,
+    .form__input:visited{
+        width: 45%;
+    }  
+    .drop_down{
+        width: 45%;
+    }
+    .container{
+        background-size: cover;
+    }
+}
+
+@media(min-width: 700px){
+    .form__input,
+    .form__input:active,
+    .form__input:visited{
+        width: 30%;
+    }  
+    .drop_down{
+        width: 30%;
+    }
+}
