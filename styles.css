@@ -135,6 +135,9 @@ body{
     .drop_down{
         width: 45%;
     }
+    .form__group{
+        width: 45%;
+    }
     .container{
         background-size: cover;
     }
@@ -148,5 +151,8 @@ body{
     }  
     .drop_down{
         width: 30%;
+    }
+    .form__group{
+        width: 45%;
     }
 }
