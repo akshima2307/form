@@ -9,21 +9,21 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 .container{
-    background-image: url("img/WhatsApp\ Image\ 2021-03-01\ at\ 1.32.41\ AM.jpeg");
+    height: max-content;
+}
+.background__image{
     height: 100vh;
+    background-image: url("img/WhatsApp\ Image\ 2021-03-01\ at\ 1.32.41\ AM.jpeg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 800px 100vh;
+    background-size: 800px 100%;
 }
-.container > span{
+.background__image > span{
+    display: block;
     width: 100%;     
     text-align: center;
     font-size: 0.6rem;
     color: white;
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translateX(-50%);
 }
 .header{
     width: 100%;
@@ -43,14 +43,15 @@ body{
     justify-content: center;
 }
 .logo_flex > img{
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 3rem;
+    height: 3rem;
     object-fit: contain;
 }
 .logo_flex > img:first-child{
     margin-right: 0.7rem;
 }
 .form{
+    margin-top: 2rem;
     box-sizing: border-box;
     height: 65%;
     width: 100%;
@@ -84,6 +85,7 @@ body{
     padding: 0.5rem;
 }
 .drop_down > select{
+    background-color: white;
     width: 46%;
     height: 2.5rem;
     outline: none;
@@ -100,6 +102,7 @@ body{
     width: 60%;
 }
 .date__input{
+    background-color: white;
     width: 60%;
     height: 2.5rem;
     padding-left: 0.6rem;
