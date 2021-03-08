@@ -11,4 +11,12 @@ const calculateFee = function(){
     else if(status === "FOREIGN NATIONALS"){
         fee.value = "INR 500";
     }
-}
+};
+
+const input = document.querySelector('form__input');
+const span = document.querySelector('form__label');
+
+input.addEventListener('input', function (event) {
+    span.innerHTML = this.value.replace(/\s/g, '&nbsp;');
+    this.style.width = span.offsetWidth + 'px';
+});

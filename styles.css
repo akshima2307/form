@@ -16,7 +16,7 @@ body{
     background-size: 800px 100vh;
 }
 .container > span{
-    width: 100%;
+    width: 100%;     
     text-align: center;
     font-size: 0.6rem;
     color: white;
@@ -27,7 +27,7 @@ body{
 }
 .header{
     width: 100%;
-    height: 30%;
+    height: 25%;
 }
 .logo_main{
     width: 100%;
@@ -43,8 +43,8 @@ body{
     justify-content: center;
 }
 .logo_flex > img{
-    width: 3rem;
-    height: 3rem;
+    width: 2.4rem;
+    height: 2.4rem;
     object-fit: contain;
 }
 .logo_flex > img:first-child{
@@ -52,7 +52,6 @@ body{
 }
 .form{
     box-sizing: border-box;
-    padding-top: 2rem;
     height: 65%;
     width: 100%;
     display: flex;
@@ -75,8 +74,7 @@ body{
 }
 .form__label{
     color: white;
-    font-weight: 700;
-    margin-right: 5rem;
+    font-weight: bolder;
 }
 .drop_down{
     display: flex;
@@ -95,8 +93,23 @@ body{
 .fee{
     width: 5rem;
 }
+.form__group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+.date__input{
+    width: 60%;
+    height: 2.5rem;
+    padding-left: 0.6rem;
+    margin-bottom: 0.7rem;
+    outline: none;
+    border-radius: 0.5rem;
+    border: none;
+}
 .btn,.btn:visited{
-    height: 3rem;
+    height: 2.5rem;
     width: 11rem;
     background-color: rgb(35, 147, 240);
     color: white;
