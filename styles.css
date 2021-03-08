@@ -24,6 +24,7 @@ body{
     text-align: center;
     font-size: 0.6rem;
     color: white;
+    margin-top: 1rem;
 }
 .header{
     width: 100%;
@@ -128,6 +129,11 @@ body{
     color: rgb(35, 147, 240);
 }
 
+@media(max-height: 600px){
+    .background__image{
+        height: max-content;
+    }
+}
 
 @media(min-width: 700px){
     .form__input,
@@ -156,6 +162,7 @@ body{
         width: 30%;
     }
     .form__group{
-        width: 45%;
+        width: 30%;
     }
-}
+};
+
