@@ -21,38 +21,55 @@
                 <img src="img/5-soham.png" alt="">
             </div>
         </div>
-        <div class="form">
-            <input type="text" class="form__input" placeholder="FULL NAME"  required>
-            <input type="number" class="form__input" placeholder="MOBILE NUMBER"  required>
-            <input type="email" class="form__input" placeholder="EMAIL ADDRESS"  required>
-            <input type="number" class="form__input" placeholder="NO. OF TICKETS"  required>
-            <div class="form__group">
+        <form id="form" class="form">
+            <div class="form__control">
+                <input type="text" id="username"  placeholder="FULL NAME"  >
+                <small class="small">Error message</small>
+            </div>
+            <div class="form__control">
+                <input type="number" id="phone"  placeholder="MOBILE NUMBER"  >
+                <small>Error message</small>
+            </div>
+            <div class="form__control">
+                <input type="email" id="email"  placeholder="EMAIL ADDRESS"  >
+                <small>Error message</small>
+            </div>
+            <div class="form__control">
+                <input type="number" id="ticket" onchange="calculateFee()"  placeholder="NO. OF TICKETS"  >
+                <small>Error message</small>
+            </div>
+            <div class="form__control">
                 <label class="form__label" for="date">Date:</label>
                 <input class="date__input" type="date" id="date" >
+                <small>Error message</small>
             </div>
-            <div class="drop_down">
-                <select>
-                    <option value="MALE">MALE</option>
-                    <option value="FEMALE">FEMALE</option>
-                    <option value="RATHER NOT TO SAY">RATHER NOT TO SAY</option>
-                </select>
+            <div class="form__control">
                 <select id="option" onchange="calculateFee()">
+                    <option value="">SELECT</option>
                     <option value="STUDENT">STUDENT</option>
                     <option value="INDIAN">INDIAN</option>
                     <option value="FOREIGN NATIONALS">FOREIGN NATIONALS</option>
                 </select>
+                <small>Error message</small>
             </div>
-            <div class="form__group">
+            <div class="fee form__control">
                 <label for="fee" class="form__label">ENTRY FEE:</label>
-                <input class="form__input fee" id="fee" required>
-            </div>
+                <span>INR</span>
+                <input type="number" class="form__input fee" id="fee" >
+                <small>Error message</small>
+            </div>          
             <div>
-            <button class="btn">PROCCED TO PAY</button>
+            <a onclick="checkInputs()" type="submit" class="btn">PROCCED TO PAY</a>
             </div>
-        </div>
+        </form>
         <span>Copyright 2021, all rights reserved with National Gallery of Modern Art.</span>
     </div>
     </section>
+    <div id="popup" class="popup" >
+        <div id="popup__content" class="popup__content">
+            
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
